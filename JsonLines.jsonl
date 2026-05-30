@@ -1,0 +1,24 @@
+{"nomeUsuario":"Balcão PDV1","dataHora":[2026,5,30,18,36,54,50283253],"codigoPedido":5,"nomeOperacao":"Exceção","nomeCliente":"Maria"}
+{"nomeUsuario":"Balcão PDV1","dataHora":[2026,5,30,18,36,54,180466775],"codigoPedido":5,"nomeOperacao":"Aplicar Cupom","nomeCliente":"Maria"}
+{"nomeUsuario":"Balcão PDV1","dataHora":[2026,5,30,18,36,54,181437161],"codigoPedido":5,"nomeOperacao":"Exceção","nomeCliente":"Maria"}
+{"nomeUsuario":"Fulano de tal","dataHora":[2026,5,30,18,36,54,182520317],"codigoPedido":5,"nomeOperacao":"Exceção","nomeCliente":"Maria"}
+{"nomeUsuario":"Balcão PDV1","dataHora":[2026,5,30,18,36,54,200006008],"codigoPedido":5,"nomeOperacao":"Exceção","nomeCliente":"Maria"}
+{"nomeUsuario":"Balcão PDV1","dataHora":[2026,5,30,18,36,54,200892764],"codigoPedido":5,"nomeOperacao":"Exceção","nomeCliente":"Maria"}
+{"nomeUsuario":"Fulano de tal","dataHora":[2026,5,30,18,41,1,382706634],"codigoPedido":5,"nomeOperacao":"Exceção","nomeCliente":"Maria"}
+{"nomeUsuario":"Gerente","dataHora":[2026,5,30,18,41,1,507548304],"codigoPedido":5,"nomeOperacao":"Aplicar Cupom","nomeCliente":"Maria"}
+{"nomeUsuario":"Fulano de tal","dataHora":[2026,5,30,18,41,1,508530390],"codigoPedido":5,"nomeOperacao":"Exceção","nomeCliente":"Maria"}
+{"nomeUsuario":"Fulano de tal","dataHora":[2026,5,30,18,41,1,509598136],"codigoPedido":5,"nomeOperacao":"Exceção","nomeCliente":"Maria"}
+{"nomeUsuario":"Fulano de tal","dataHora":[2026,5,30,18,41,1,527344498],"codigoPedido":5,"nomeOperacao":"Exceção","nomeCliente":"Maria"}
+{"nomeUsuario":"Fulano de tal","dataHora":[2026,5,30,18,41,1,528353404],"codigoPedido":5,"nomeOperacao":"Exceção","nomeCliente":"Maria"}
+{"nomeUsuario":"Gerente","dataHora":[2026,5,30,18,41,5,218441489],"codigoPedido":5,"nomeOperacao":"Exceção","nomeCliente":"Maria"}
+{"nomeUsuario":"Balcão PDV1","dataHora":[2026,5,30,18,41,5,341928425],"codigoPedido":5,"nomeOperacao":"Aplicar Cupom","nomeCliente":"Maria"}
+{"nomeUsuario":"Fulano de tal","dataHora":[2026,5,30,18,41,5,342844891],"codigoPedido":5,"nomeOperacao":"Exceção","nomeCliente":"Maria"}
+{"nomeUsuario":"Fulano de tal","dataHora":[2026,5,30,18,41,5,343891807],"codigoPedido":5,"nomeOperacao":"Exceção","nomeCliente":"Maria"}
+{"nomeUsuario":"Gerente","dataHora":[2026,5,30,18,41,5,359789086],"codigoPedido":5,"nomeOperacao":"Exceção","nomeCliente":"Maria"}
+{"nomeUsuario":"Fulano de tal","dataHora":[2026,5,30,18,41,5,360622413],"codigoPedido":5,"nomeOperacao":"Exceção","nomeCliente":"Maria"}
+{"nomeUsuario":"Gerente","data":"30/05/2026","hora":"19:15:36","codigoPedido":5,"nomeOperacao":"Calculo do valor total do pedido (Exceção)","nomeCliente":"Maria"}
+{"nomeUsuario":"Balcão PDV 1","data":"30/05/2026","hora":"19:15:37","codigoPedido":5,"nomeOperacao":"Calculo do valor total do pedido (Aplicar Cupom)","nomeCliente":"Maria"}
+{"nomeUsuario":"Fulano de tal","data":"30/05/2026","hora":"19:15:37","codigoPedido":5,"nomeOperacao":"Calculo do valor total do pedido (Exceção: Cupom inexistente)","nomeCliente":"Maria"}
+{"nomeUsuario":"Gerente","data":"30/05/2026","hora":"19:15:37","codigoPedido":5,"nomeOperacao":"Calculo do valor total do pedido (Exceção)","nomeCliente":"Maria"}
+{"nomeUsuario":"Gerente","data":"30/05/2026","hora":"19:15:37","codigoPedido":5,"nomeOperacao":"Calculo do valor total do pedido (Exceção)","nomeCliente":"Maria"}
+{"nomeUsuario":"Gerente","data":"30/05/2026","hora":"19:15:37","codigoPedido":5,"nomeOperacao":"Calculo do valor total do pedido (Exceção)","nomeCliente":"Maria"}
