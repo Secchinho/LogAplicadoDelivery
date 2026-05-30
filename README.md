@@ -1,4 +1,4 @@
-# [LogAplicadoDelivery](https://github.com/Secchinho/LogAplicadoDelivery)
+# [Log Aplicado ao Delivery](https://github.com/Secchinho/LogAplicadoDelivery)
 Alunos: Fabrício Lopes Lima do Amaral, Lucas Borges do Carmo e Raphael Figueiredo Secchin
 
 
