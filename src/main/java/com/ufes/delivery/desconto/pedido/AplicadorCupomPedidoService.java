@@ -57,4 +57,9 @@ public class AplicadorCupomPedidoService {
         pedido.setCupomAplicado(cupom);
         this.logger.criarLog(Mapper.convertToLog(pedido.getCodigoPedido(), "Aplicar Cupom", pedido.getCliente().getNome()));
     }
+
+    public void setLogger(ILogger logger) {
+        this.logger = logger;
+    }
+    
 }

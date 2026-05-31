@@ -70,6 +70,11 @@ public class Pedido {
         return taxaEntrega;
     }
 
+    public void setLogger(ILogger logger) {
+        this.logger = logger;
+    }
+    
+
     public double getTotalDescontosTaxaEntrega() {
         double desconto = 0;
 
