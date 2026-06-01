@@ -6,3 +6,6 @@ Alunos: Fabrício Lopes Lima do Amaral, Lucas Borges do Carmo e Raphael Figueire
 Repositório Atividade Log de Auditoria da disciplina de Projeto de Sistemas de Software
 
 [![JitPack](https://jitpack.io/v/Secchinho/LogAplicadoDelivery.svg)](https://jitpack.io/#Secchinho/LogAplicadoDelivery)
+
+## Adicionando os Logs ao seu projeto:
+Basta editar o pom.xml e adicionar o seguinte:
