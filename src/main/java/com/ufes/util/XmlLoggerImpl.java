@@ -4,7 +4,6 @@
  */
 package com.ufes.util;
 
-import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -16,11 +15,26 @@ import java.nio.file.StandardOpenOption;
  */
 public class XmlLoggerImpl implements ILogger{
 
+    private final String nomeArquivo;
+    
+    public XmlLoggerImpl(String nomeArquivo){
+        if(nomeArquivo == null || nomeArquivo.isBlank()){
+            throw new IllegalArgumentException("Nome de arquivo vazio.");
+        }
+        this.nomeArquivo = nomeArquivo;
+    }
+    
     @Override
     public void criarLog(RegistroDeLogDTO logDTO) {
-        String stringXml = "<Registro>\n<NomeUsuario>" + logDTO.getNomeUsuario() +"</NomeUsuario>\n<Data>" +logDTO.getData() +"</Data>\n<Hora>" +logDTO.getHora() +"</Hora>\n<CodigoPedido>" +logDTO.getCodigoPedido() +"</CodigoPedido>\n<NomeOperacao>" +logDTO.getNomeOperacao() +"</NomeOperacao>\n<NomeCliente>" +logDTO.getNomeCliente() +"</NomeCliente>\n</Registro>";
+        String stringXml = "<Registro>\n<NomeUsuario>" + logDTO.getNomeUsuario() 
+                + "</NomeUsuario>\n<Data>" + logDTO.getData() + "</Data>\n<Hora>" 
+                + logDTO.getHora() +"</Hora>\n<CodigoPedido>" + logDTO.getCodigoPedido() 
+                +"</CodigoPedido>\n<NomeOperacao>" + logDTO.getNomeOperacao() 
+                + "</NomeOperacao>\n<NomeCliente>" + logDTO.getNomeCliente() 
+                +"</NomeCliente>\n</Registro>";
         try {
-            Files.writeString(Paths.get("logXML.xml"), stringXml + System.lineSeparator(), StandardOpenOption.CREATE, StandardOpenOption.APPEND);
+            Files.writeString(Paths.get(this.nomeArquivo), stringXml + System.lineSeparator(), 
+                    StandardOpenOption.CREATE, StandardOpenOption.APPEND);
         } catch (IOException e) {
             System.out.println("Erro!!! " + e.getMessage());
         }

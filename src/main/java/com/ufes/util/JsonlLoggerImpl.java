@@ -17,14 +17,22 @@ import java.nio.file.StandardOpenOption;
  * @author raphael
  */
 public class JsonlLoggerImpl implements ILogger {
-
+    private final String nomeArquivo;
+    
+    public JsonlLoggerImpl(String nomeArquivo){
+        if(nomeArquivo == null || nomeArquivo.isBlank()){
+            throw new IllegalArgumentException("Nome de arquivo vazio.");
+        }
+        this.nomeArquivo = nomeArquivo;
+    }
+    
     @Override
     public void criarLog(RegistroDeLogDTO logDTO) {
         ObjectMapper mapper = new ObjectMapper();
         mapper.registerModule(new JavaTimeModule());
         try {
             String dtoString = mapper.writeValueAsString(logDTO);
-            Files.writeString(Paths.get("JsonLines.jsonl"), dtoString + System.lineSeparator(), 
+            Files.writeString(Paths.get(this.nomeArquivo), dtoString + System.lineSeparator(), 
             StandardOpenOption.CREATE, StandardOpenOption.APPEND);
         } catch (JsonProcessingException e) {
             System.out.println("Erro!!! " + e.getMessage());

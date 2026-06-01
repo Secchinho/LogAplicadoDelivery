@@ -31,7 +31,7 @@ public class AplicadorCupomPedidoService {
         Optional<CupomDescontoPedido> cupomEncontrado = cupomRepository.buscarCupom(codigoCupom);
 
         if (cupomEncontrado.isEmpty()) {
-            this.logger.criarLog(Mapper.convertToLog(pedido.getCodigoPedido(), "Exceção: Cupom inexistente", pedido.getCliente().getNome()));
+            this.logger.criarLog(Mapper.convertToLog(pedido.getCodigoPedido(), "Exceção: Cupom inexistente "  + codigoCupom, pedido.getCliente().getNome()));
 
             throw new IllegalArgumentException("Cupom inexistente: " + codigoCupom);
         }
@@ -48,7 +48,7 @@ public class AplicadorCupomPedidoService {
 
         if (cupomAtual.isPresent()) {
             if (cupom.getPercentual() <= cupomAtual.get().getPercentual()) {
-                this.logger.criarLog(Mapper.convertToLog(pedido.getCodigoPedido(), "Exceção", pedido.getCliente().getNome()));
+                this.logger.criarLog(Mapper.convertToLog(pedido.getCodigoPedido(), "Exceção: O cupom " + codigoCupom + " nao tem um percentual maior que o cupom atual", pedido.getCliente().getNome()));
                 throw new IllegalStateException(
                         "O cupom " + codigoCupom + " nao tem um percentual maior que o cupom atual");
             }

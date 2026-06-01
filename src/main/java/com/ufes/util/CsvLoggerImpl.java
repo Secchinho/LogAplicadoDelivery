@@ -24,8 +24,10 @@ public class CsvLoggerImpl implements ILogger{
     }
     @Override
     public void criarLog(RegistroDeLogDTO logDTO) {
-        try(BufferedWriter writer = new BufferedWriter(new FileWriter(nomeArquivo, false))){
-            writer.write(logDTO.getNomeUsuario() + "," + logDTO.getData() + "," + logDTO.getHora() + "," + logDTO.getCodigoPedido() + "," + logDTO.getNomeOperacao() + "," + logDTO.getNomeCliente());
+        try(BufferedWriter writer = new BufferedWriter(new FileWriter(this.nomeArquivo, true))){
+            writer.write(logDTO.getNomeUsuario() + "," + logDTO.getData() + "," 
+                    + logDTO.getHora() + "," + logDTO.getCodigoPedido() + "," 
+                    + logDTO.getNomeOperacao() + "," + logDTO.getNomeCliente());
             writer.newLine();
         
         }catch(IOException e){
@@ -34,7 +36,7 @@ public class CsvLoggerImpl implements ILogger{
     }
     
     private void criarArquivo(){
-        try(BufferedWriter writer = new BufferedWriter(new FileWriter(nomeArquivo, false))){
+        try(BufferedWriter writer = new BufferedWriter(new FileWriter(this.nomeArquivo, false))){
             writer.write("Usuario,Data,Hora,Codigo,Operacao,Cliente\n");
         }catch(IOException e){
             System.out.println("Erro ao inicializar arquivo CSV: " + e.getMessage());

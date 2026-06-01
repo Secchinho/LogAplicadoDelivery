@@ -54,7 +54,7 @@ public class Pedido {
             valor += item.valorTotal();
         }
 
-        this.logger.criarLog(Mapper.convertToLog(this.getCodigoPedido(), "Exceção", this.getCliente().getNome()));
+        this.logger.criarLog(Mapper.convertToLog(this.getCodigoPedido(), "get Valor Pedido", this.getCliente().getNome()));
         return valor;
     }
 

@@ -7,7 +7,9 @@ import com.ufes.delivery.model.CupomDescontoPedido;
 import com.ufes.delivery.model.Item;
 import com.ufes.delivery.model.Pedido;
 import com.ufes.delivery.repository.CupomRepositoryEmMemoria;
+import com.ufes.util.CsvLoggerImpl; // Remover
 import com.ufes.util.JsonlLoggerImpl; // Remover
+import com.ufes.util.XmlLoggerImpl; // Remover
 import java.time.LocalDateTime;
 
 public class UmCasoDeUsoDePedido {
@@ -16,7 +18,7 @@ public class UmCasoDeUsoDePedido {
         Cliente cliente = new Cliente("Maria", "Ouro", 1, "Limoeiro", "Cidade Maravilhosa", "Castelo");
 
         LocalDateTime dataPedido = LocalDateTime.now();
-        Pedido pedido = new Pedido(dataPedido, cliente, 5, new JsonlLoggerImpl());
+        Pedido pedido = new Pedido(dataPedido, cliente, 5, new CsvLoggerImpl("TesteCSV.csv"));
 
         Item item1 = new Item("Caderno", 2, 10.50, "Educacao");
         Item item2 = new Item("Borracha", 5, 4.25, "Educacao");
@@ -39,7 +41,7 @@ public class UmCasoDeUsoDePedido {
         cupomRepository.adicionarCupom(
                 new CupomDescontoPedido("VALIDOHOJE", 15.0, dataPedido.minusDays(1), dataPedido.plusDays(1)));
 
-        AplicadorCupomPedidoService aplicadorCupomService = new AplicadorCupomPedidoService(cupomRepository, new JsonlLoggerImpl());
+        AplicadorCupomPedidoService aplicadorCupomService = new AplicadorCupomPedidoService(cupomRepository, new CsvLoggerImpl("TesteCSV.csv"));
 
         LocalDateTime dataHoraAplicacaoCupom = LocalDateTime.now();
 
