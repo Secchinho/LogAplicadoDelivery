@@ -9,3 +9,21 @@ Repositório Atividade Log de Auditoria da disciplina de Projeto de Sistemas de 
 
 ## Adicionando os Logs ao seu projeto:
 Basta editar o pom.xml e adicionar o seguinte:
+```
+<repositories>
+		<repository>
+		    <id>jitpack.io</id>
+		    <url>https://jitpack.io</url>
+		</repository>
+</repositories>
+```
+
+e também:
+
+```
+<dependency>
+	    <groupId>com.github.Secchinho</groupId>
+	    <artifactId>LogAplicadoDelivery</artifactId>
+	    <version>V1.0.1</version>
+</dependency>
+```
