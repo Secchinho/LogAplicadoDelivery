@@ -36,11 +36,5 @@
             <version>2.21.3</version>
             <scope>compile</scope>
         </dependency>
-        
-        <dependency>
-            <groupId>com.github.Secchinho</groupId>
-            <artifactId>LogAplicadoDelivery</artifactId>
-            <version>v1.0.0</version>
-        </dependency>
     </dependencies>
 </project>
