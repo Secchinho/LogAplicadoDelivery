@@ -4,3 +4,7 @@ Alunos: Fabrício Lopes Lima do Amaral, Lucas Borges do Carmo e Raphael Figueire
 
 
 Repositório Atividade Log de Auditoria da disciplina de Projeto de Sistemas de Software
+
+```
+[![](https://jitpack.io/v/Secchinho/LogAplicadoDelivery.svg)](https://jitpack.io/#Secchinho/LogAplicadoDelivery)
+```
